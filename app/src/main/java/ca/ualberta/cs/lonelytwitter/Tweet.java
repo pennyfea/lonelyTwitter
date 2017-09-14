@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
  * Created by pennyfea on 9/13/17.
  */
 
-public class Tweet {
+public abstract class Tweet implements  Tweetable{
     private String message;
     private Date date;
 
@@ -23,6 +23,7 @@ public class Tweet {
     }
 
     public String getMessage(){
+
         return message;
     }
 
@@ -34,4 +35,10 @@ public class Tweet {
             throw new TweetTooLongException();
         }
     }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public abstract Boolean isImportant();
 }

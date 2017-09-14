@@ -40,14 +40,36 @@ public class LonelyTwitterActivity extends Activity {
 				setResult(RESULT_OK);
 				String text = bodyText.getText().toString();
 				saveInFile(text, new Date(System.currentTimeMillis()));
-				Tweet tweet = new Tweet("");
+
+
+                // Tweet tweet = new Tweet("");
+                Tweet tweet = new importantTweet("");
+                Tweet tweet1 = new NormalTweet("Hi");
+
+                //importantTweet tweet = new importantTweet("");
 				try{
 					tweet.setMessage("Hello");
 				}catch(TweetTooLongException e){
 
 				}
+				Tweetable tweet3 = new importantTweet("");
+				ArrayList<Tweet> tweetList = new ArrayList<Tweet>();
 
-				//finish();
+                CommonMood commonMood = new Happy("");
+                CommonMood commonMood1 = new Excited("");
+
+                ArrayList<CommonMood> commonMoodList = new ArrayList<CommonMood>();
+                commonMoodList.add(commonMood);
+                commonMoodList.add(commonMood1);
+
+                tweetList.add(tweet);
+                tweetList.add(tweet1);
+
+
+
+				//log.d("", "The isImportant method on tweet returns" + tweet.isImportant());
+                //log.d("", "The isImportant method on tweet returns" + tweet1.isImportant());
+                        //finish();
 
 			}
 		});
