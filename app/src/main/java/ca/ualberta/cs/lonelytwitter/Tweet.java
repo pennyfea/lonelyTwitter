@@ -1,5 +1,6 @@
 package ca.ualberta.cs.lonelytwitter;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.StringTokenizer;
 
@@ -10,6 +11,7 @@ import java.util.StringTokenizer;
 public abstract class Tweet implements  Tweetable{
     private String message;
     private Date date;
+    private ArrayList<CommonMood> commonMoodList;
 
     public Tweet(String message){
         date = new Date();

@@ -58,9 +58,8 @@ public class LonelyTwitterActivity extends Activity {
                 CommonMood commonMood = new Happy("");
                 CommonMood commonMood1 = new Excited("");
 
-                ArrayList<CommonMood> commonMoodList = new ArrayList<CommonMood>();
-                commonMoodList.add(commonMood);
-                commonMoodList.add(commonMood1);
+
+
 
                 tweetList.add(tweet);
                 tweetList.add(tweet1);
