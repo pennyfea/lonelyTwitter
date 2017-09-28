@@ -4,9 +4,18 @@ import java.util.Date;
 
 /**
  * Created by pennyfea on 9/13/17.
+ *
+ * Represents a normal tweet.
  */
 
-public class NormalTweet extends Tweet {
+
+
+public class  NormalTweet extends Tweet {
+
+    /**
+     *
+     * @param message
+     */
 
 
     public NormalTweet(String message) {
